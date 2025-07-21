@@ -29,12 +29,12 @@ Built an end-to-end **Power BI dashboard** combining four large datasets to unco
 
 The project uses 4 major `.csv` files:
 
-| File Name             | Description                             | Size     |
-|-----------------------|-----------------------------------------|----------|
-| `ball_by_ball_data`   | Delivery-level data from all matches     | ~53 MB   |
-| `ipl_matches_data`    | Match metadata (season, teams, result)   | ~243 KB  |
-| `players-data-updated`| Player profiles with teams               | ~77 KB   |
-| `teams_data`          | Team codes and franchise info            | ~2 KB    |
+| File Name             | Description                             |
+|-----------------------|-----------------------------------------|
+| `ball_by_ball_data`   | Delivery-level data from all matches     |
+| `ipl_matches_data`    | Match metadata (season, teams, result)   |
+| `players-data-updated`| Player profiles with teams               |
+| `teams_data`          | Team codes and franchise info            |
 
 All files are connected via Power BI's relationship model for a unified schema.
 
