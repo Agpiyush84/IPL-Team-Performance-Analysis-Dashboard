@@ -1,78 +1,106 @@
 # 🏏 IPL Team Performance Analysis Dashboard
 
-A Power BI project that visualizes IPL team performances from 2008 to 2025 using advanced data modeling and DAX.
+A Power BI project visualizing IPL team and player performances from 2008 to 2025 using advanced DAX, data modeling, and interactive visualizations.
 
 ---
 
 ## 📌 Problem Statement
 
-Evaluate IPL team performance across seasons using match-level, player-level, and ball-by-ball data to extract dynamic KPIs, rankings, and trends.
+Analyze IPL match, player, and ball-by-ball data to understand trends, compare team performances, and build season-wise dynamic points tables with key performance metrics.
 
 ---
 
 ## ✅ Solution
 
-Developed an interactive dashboard using **Power BI** to analyze team performance, wins/losses, run trends, and generate a dynamic points table per season.
+Built an end-to-end **Power BI dashboard** combining four large datasets to uncover team strategies, individual milestones, and performance insights using DAX, slicers, and interactive visuals.
 
 ---
 
-## 🧰 Tools Used
+## 🧰 Tools & Technologies
 
-- **Power BI** (Reports, Visuals, DAX)
-- **DAX** (Calculated columns, measures)
-- **Data Modeling** (Relationships between 4+ tables)
+- 🧩 **Power BI** – Dashboards, visuals, interactivity  
+- 📐 **DAX** – KPIs, calculated columns, dynamic tables  
+- 🔗 **Data Modeling** – Relationship-building across multiple tables  
+- 🧮 **Excel** – Pre-processing and transformations
 
 ---
 
-## 📁 Dataset Overview
+## 📁 Dataset Summary
 
-Utilized 4 interconnected `.csv` files:
+The project uses 4 major `.csv` files:
 
-- `ipl_matches_data` – Match metadata from 2008 to 2025  
-- `ball_by_ball_data` – Delivery-level information (50K+ KB)  
-- `players-data-updated` – Player attributes & team mapping  
-- `teams_data` – Official team information
+| File Name             | Description                             | Size     |
+|-----------------------|-----------------------------------------|----------|
+| `ball_by_ball_data`   | Delivery-level data from all matches     | ~53 MB   |
+| `ipl_matches_data`    | Match metadata (season, teams, result)   | ~243 KB  |
+| `players-data-updated`| Player profiles with teams               | ~77 KB   |
+| `teams_data`          | Team codes and franchise info            | ~2 KB    |
+
+All files are connected via Power BI's relationship model for a unified schema.
 
 ---
 
 ## 🧮 DAX Measures & Metrics
 
-- Total Runs Scored  
-- Total Wickets Taken  
-- Number of Sixes/Fours  
-- Matches Played & Won  
-- Centuries by Players  
-- Dynamic Points Table  
-- Win Percentage  
-- Match Result Classification
+- 🟠 **Orange Cap Tracker**
+  - Top run-scorer of the season
+  - Player Name, Team, Runs Scored, with image
+
+- 🟣 **Purple Cap Tracker**
+  - Top wicket-taker
+  - Player Name, Team, Total Wickets, with image
+
+- 💥 **Most Sixes/Fours**
+  - Player Name, Team Name
+  - Total Sixes/Fours hit, player photos included
+
+- 📊 **Team Performance Stats**
+  - Matches Played, Matches Won
+  - No Results, Ties, Total Points
+
+- 💯 **Batting Milestones**
+  - Number of Centuries (100+)
+  - Number of Half Centuries (50–99)
+
+- 📈 **Dynamic Points Table**
+  - Season-wise points, wins, losses
+  - Built fully in DAX, controlled with slicers
 
 ---
 
 ## 📊 Dashboards
 
-- **Overview Page** – Season-wise stats, team comparison  
-- **Team Performance** – Win/loss trend, NRR, top players  
-- **Points Table** – Season-wise DAX-powered table  
-- **Match Breakdown** – Match results by team and margin  
-- **Batting vs Bowling** – Runs, strike rate, wickets  
+### 🧠 All-in-One: Team & Player Analysis
+
+A single dynamic dashboard offers complete analysis:
+
+- 📅 **Season Slicer** – Filter all visuals by season
+- 🟠 **Orange Cap** – Top scorer with image & stats
+- 🟣 **Purple Cap** – Top wicket-taker with visuals
+- 💥 **Power Hitters** – Most sixes and fours by player/team
+- 💯 **Milestones** – Count of 100s & 50s per season
+- 📈 **Points Table** – Live updating by filters
+- 🏏 **Match Result Analysis** – Interactive win/loss chart
+
+> ⚙️ Slicers and filters make every metric **dynamic** and **explorable**.
 
 ---
 
-## 🔍 Insights
+## 🔍 Key Insights
 
-- Dominant teams vary by season — clear power shifts post-2017  
-- Some teams consistently fail in away matches  
-- High six-hitting correlates with match wins (esp. in 2023–25)  
-- Close matches (<10 runs/1 wicket margin) have increased  
-- Ball-by-ball data shows economy rate swings in death overs
+- 🏆 Power shifts visible post-2017 with rising new contenders  
+- 📉 Teams underperform significantly in away games  
+- 💣 High six-hitting teams win more matches, especially post-2022  
+- 📊 Tight finishes (wins by <10 runs or <2 wickets) increasing  
+- 🧮 Death overs show highest economy swings across all seasons  
 
 ---
 
 ## 🚀 Future Enhancements
 
-- Add player role segmentation (e.g., all-rounder impact)  
-- Integrate prediction models for match outcomes  
-- Simulate "What if" for team compositions and toss decisions
+- ➕ Add player type segmentation (batsman, bowler, all-rounder)  
+- 🧠 Introduce match prediction models  
+- 🎯 Enable "What-If" team composition and toss simulations  
 
 ---
 
@@ -84,10 +112,11 @@ Utilized 4 interconnected `.csv` files:
 
 ---
 
-## 📂 File Size Note
+## 📦 File & Performance Notes
 
-- Large dataset (`ball_by_ball_data.csv` ~53MB) used for granular insights.
-- Optimized data model ensures smooth Power BI performance.
+- `ball_by_ball_data.csv` (~53MB) powers all granular delivery-level metrics  
+- Data model optimized for **fast report performance** even with large files  
+- Final `.pbix` file included for full reproducibility
 
 ---
 
