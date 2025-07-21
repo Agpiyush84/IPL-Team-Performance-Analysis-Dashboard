@@ -103,7 +103,16 @@ A single dynamic dashboard offers complete analysis:
 - 🎯 Enable "What-If" team composition and toss simulations  
 
 ---
+## 📦 File
 
+- Final `.pbix` file included for full reproducibility
+
+---
+## 📦 File
+
+- Final `.pbix` file included for full reproducibility
+
+---
 ## 🙋‍♂️ Author
 
 **Piyush Agarwal**  
@@ -112,11 +121,5 @@ A single dynamic dashboard offers complete analysis:
 
 ---
 
-## 📦 File & Performance Notes
 
-- `ball_by_ball_data.csv` (~53MB) powers all granular delivery-level metrics  
-- Data model optimized for **fast report performance** even with large files  
-- Final `.pbix` file included for full reproducibility
-
----
 
