@@ -108,11 +108,6 @@ A single dynamic dashboard offers complete analysis:
 - Final `.pbix` file included for full reproducibility
 
 ---
-## 📦 File
-
-- Final `.pbix` file included for full reproducibility
-
----
 ## 🙋‍♂️ Author
 
 **Piyush Agarwal**  
